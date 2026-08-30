@@ -1,3 +1,6 @@
+import BhynPanel from "@/components/ui/bhyn-panel";
+import BhynButton from "@/components/ui/bhyn-button";
+
 import AppShell from "@/components/layout/app-shell";
 import StatCard from "@/components/dashboard/stat-card";
 import ActivityCard from "@/components/dashboard/activity-card";
@@ -8,18 +11,24 @@ export default function DashboardPage() {
         <AppShell>
             <div className="mx-auto max-w-7x1 space-y-8">
                 {/* Page Heading */}
-                <section>
-                    <div className="text-xs tracking-[0.35em] text-indigo-400">
-                        SYSTEM OVERVIEW
+                <section className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+                    <div>
+                        <div className="text-xs tracking-[0.35em] text-indigo-400">
+                            SYSTEM OVERVIEW
+                        </div>
+
+                        <h1 className="mt-2 text-3x1 font-black tracking-tight text-white">
+                            GOOD EVENING
+                        </h1>
+
+                        <p className="mt-2 text-sm text-slate-500">
+                            Welcome back to the Bhyn Flow control deck.
+                        </p>
                     </div>
 
-                    <h1 className="mt-2 text-3x1 font-black tracking-tight text-white">
-                        GOOD EVENING
-                    </h1>
-
-                    <p className="mt-2 text-sm text-slate-500">
-                        Welcome back to the Bhyn Flow control deck.
-                    </p>
+                    <BhynButton variant="pink">
+                        CREATE ORDER
+                    </BhynButton>
                 </section>
 
                 {/* Statistics */}
