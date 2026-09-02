@@ -3,7 +3,7 @@ import { navigationItems } from "@/lib/navigation";
 
 export default function Sidebar() {
     return (
-        <aside className="flex w-64 shrink-0 flex-col border-r border-indigo-500/20 bg-black/80 p-4">
+        <aside className="hidden w-64 shrink-0 flex-col border-r border-indigo-500/20 bg-black/80 p-4 md:flex">
             <div className="mb-8 border border-indigo-500/30 bg-indigo-500/5 p-4">
                 <div className="text-xs tracking-[0.35em] text-indigo-300">
                     BHYN SYSTEM
